@@ -1,34 +1,34 @@
 # test20260512
 
-## 概要
-FastAPI を使って `Hello World` を返すシンプルな API を実装したプロジェクトです。
+## Overview
+This project implements a simple API that returns `Hello World` using FastAPI.
 
-## ディレクトリ構成
-- `src/`: API のソースコード
-- `tests/`: pytest による単体テスト
+## Directory Structure
+- `src/`: Source code for the API
+- `tests/`: Unit tests using pytest
 
-## セットアップ
+## Setup
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 実行方法
-以下のコマンドで API サーバーを起動します。
+## How to Run
+Start the API server with the following command:
 
 ```bash
 uvicorn src.main:app --reload
 ```
 
-起動後、`http://127.0.0.1:8000/` にアクセスすると以下の JSON が返ります。
+After startup, access `http://127.0.0.1:8000/` to get the following JSON response:
 
 ```json
 {"message": "Hello World"}
 ```
 
-## テスト方法
-以下のコマンドで単体テストを実行します。
+## Testing
+Run unit tests with the following command:
 
 ```bash
 pytest
